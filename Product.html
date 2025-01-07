@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css"/>
+    <script src="product.js"></script>
+  
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+	
+		<nav>
+			<div class="logo"><img src="./images/icon/logo-logo.png" alt="logo">
+				<p style="margin-top: -13px; font-weight: bold; font-size: 10px;margin-left: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Digital Academy</p>
+			</div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="Course.html">Courses</a></li>
+				
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Login</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+
+        <section style="margin-top: 8rem;">
+            <div class="course-container">
+                <div class="course-header">
+                  <h1 class="course-title">Python Bootcamp 2024: Beginner</h1>
+                  <p class="course-info">Master Python from Scratch | Programming Basics | Real-world Projects</p>
+                </div>
+                <div class="course-content">
+                  <p class="course-rating">4.5 ⭐⭐⭐⭐⭐ (25,000 ratings) 100,000 students</p>
+                  <p class="course-creator">Created by <span>Expert Instructor</span></p>
+                  <p class="course-updated">Last updated: Jan 2025</p>
+                  <p class="course-language">English</p>
+                </div>
+                <div class="pricing-section">
+                  <p class="course-price">₹399 <span class="original-price">₹2,699</span> <span class="discount">85% off</span></p>
+                  <p class="time-left">3 days left at this price!</p>
+                 <a href="payment.html"><button class="add-to-cart">Buy Now</button></a> 
+                </div>
+              </div>
+            </div>
+            
+        </section>
+        <div class="course-container">
+            <!-- Explore Course Section -->
+            <div class="explore-course">
+                <h2>Explore the Course</h2>
+                <p>Get full access to the course materials, video lessons, and quizzes to enhance your learning experience.</p>
+                <button class="download-btn" onclick="downloadSyllabus()">Download Syllabus</button>
+            </div>
+        
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Left: Syllabus Topics -->
+                <div class="syllabus">
+                    <h2>Syllabus</h2>
+                    <ul>
+                        <li><button class="topic-btn" onclick="showVideo(1)">Topic 1: Python Basics</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(2)">Topic 2: Functions in Python</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(3)">Topic 3: Loops and Conditionals</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(4)">Topic 4: Data Structures</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(5)">Topic 5: OOP Concepts</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(6)">Topic 6: Exception Handling</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(7)">Topic 7: File Handling</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(8)">Topic 8: Python Libraries</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(9)">Topic 9: Web Development</button></li>
+                        <li><button class="topic-btn" onclick="showVideo(10)">Topic 10: Python Projects</button></li>
+                    </ul>
+                </div>
+        
+                <!-- Right: Video Section -->
+                <div class="video-container">
+                    <h2>Introduction Video</h2>
+                    <video id="video-player" controls>
+                        <source src="./videos/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-container">
+                <div class="left-col">
+                    <!-- <img src="images/icon/logo - Copy.png" style="width: 200px;"> -->
+                    <h1 style="color: #fff; margin-bottom: 10px;">Vetri</h1>
+                    <div class="logo"></div>
+                    <div class="social-media">
+                        <a href="#"><img src="images/icon\fb.png"></a>
+                        <a href="#"><img src="images/icon\insta.png"></a>
+                        <a href="#"><img src="images/icon\tt.png"></a>
+                        <a href="#"><img src="images/icon\ytube.png"></a>
+                        <a href="#"><img src="images/icon\linkedin.png"></a>
+                    </div><br><br>
+                    <p class="rights-text">Copyright © 2024 Created By xxx, xxx All Rights Reserved.</p>
+                    <br><p><img src="images/icon/location.png"> Lovely Professional University<br>xxx, xxx-144401</p><br>
+                    <p><img src="images/icon/phone.png"> +91-1234-567-890<br><img src="images/icon/mail.png">&nbsp; abc@gmail.com</p>
+                </div>
+                <div class="right-col">
+                    <h1 style="color: #fff">Our Newsletter</h1>
+                    <div class="border"></div><br>
+                    <p>Enter Your Email to get our News and updates.</p>
+                    <form class="newsletter-form">
+                        <input class="txtb" type="email" placeholder="Enter Your Email">
+                        <input class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        </body>
+        </html>

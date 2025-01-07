@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css"/> 
+    <script src="payment.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+	
+		<nav>
+			<div class="logo"><img src="./images/icon/logo-logo.png" alt="logo">
+				<p style="margin-top: -13px; font-weight: bold; font-size: 10px;margin-left: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Digital Academy</p>
+			</div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="Course.html">Courses</a></li>
+				
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Login</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+        <div class="awesome-payment-page">
+            <!-- Header Section -->
+            <header class="payment-header">
+                <h1><i class="fa fa-shopping-cart"></i> Checkout</h1>
+            </header>
+        
+            <!-- Product Section -->
+            <section class="cart-section">
+                <h2>Your Course</h2>
+                <div id="cart-item" class="cart-item">
+                    <div class="product-info">
+                        <h3><i class="fa fa-book"></i> Python Bootcamp in 2024 (Beginner)</h3>
+                        <p>by Eichiro D. Lucky</p>
+                        <p class="price"><i class="fa fa-tags"></i> Rs.499</p>
+                    </div>
+                    <button class="delete-btn" onclick="deleteItem()">
+                        <i class="fa fa-trash"></i> Remove
+                    </button>
+                </div>
+                <p id="empty-cart" class="empty-cart" style="display: none;">
+                    <i class="fa fa-info-circle"></i> Your cart is empty.
+                </p>
+            </section>
+        
+            <!-- Payment Section -->
+            <section class="payment-section">
+                <h2><i class="fa fa-credit-card"></i> Choose Payment Method</h2>
+                <div class="payment-options">
+                    <button class="payment-btn google-pay">
+                        <i class="fa fa-google"></i> Google Pay
+                    </button>
+                    <button class="payment-btn phonepe">
+                        <i class="fa fa-mobile-alt"></i> PhonePe
+                    </button>
+                    <button class="payment-btn card">
+                        <i class="fa fa-credit-card"></i> Credit/Debit Card
+                    </button>
+                    <button class="payment-btn paypal">
+                        <i class="fa fa-paypal"></i> PayPal
+                    </button>
+                </div>
+                <div class="total-section">
+                    <p>Total Amount: <span id="total-price">Rs.499</span></p>
+                </div>
+            </section>
+        
+            <!-- Extra Section -->
+            <section class="extra-section">
+                <a href="#" class="continue-shopping">
+                    <i class="fa fa-arrow-left"></i> Continue Shopping
+                </a>
+            </section>
+        </div>
+        
+        
+</body>
+</html>
